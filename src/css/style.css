@@ -1,0 +1,276 @@
+/* Colors */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: hsl(232, 13%, 33%);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+  background-color: hsl(240, 78%, 98%);
+  overflow-x: hidden;
+  z-index: -2;
+  position: relative;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+body main .bg-top-img {
+  display: none;
+}
+@media only screen and (min-width: 1440px) {
+  body main .bg-top-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+  }
+}
+body main .bg-bottom-img {
+  display: none;
+}
+@media only screen and (min-width: 1440px) {
+  body main .bg-bottom-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+  }
+}
+body main .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+}
+body main .title h1 {
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: hsl(233, 13%, 49%);
+}
+body main .title .custom-switch {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+body main .title .custom-switch label {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: relative;
+  margin-right: 9rem;
+  color: #b3b5c6;
+}
+body main .title .custom-switch .custom-form-label {
+  margin: 0;
+}
+body main .title .custom-switch .custom-form-label:after {
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  border-radius: 50px;
+  position: absolute;
+  top: 0.5px;
+  left: -86px;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+body main .title .custom-switch .custom-form-label:before {
+  content: "";
+  background: linear-gradient(90deg, #a3a8f0, #696fdd);
+  border: none;
+  width: 3.5rem;
+  height: 2rem;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  box-shadow: none;
+  position: absolute;
+  top: -3px;
+  left: -90px;
+}
+body main .title .custom-switch .custom-form-label:before:hover {
+  background: #b3b5c6;
+}
+body main .title .custom-switch .custom-form-label.checked:after {
+  left: -64px;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+body main .title .custom-switch .custom-control-input:checked .custom-form-label:after {
+  left: 0;
+}
+@media (min-width: 1200px) {
+  body main .card-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
+body main .card-container .card {
+  background: linear-gradient(180deg, #a3a8f0, #696fdd);
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 2px 2px 14px -3px rgb(179, 181, 198);
+  margin: 0;
+  padding: 15px;
+}
+body main .card-container .card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (min-width: 1440px) {
+  body main .card-container .card .card-body {
+    min-width: 325px;
+  }
+}
+body main .card-container .card .card-body .card-text {
+  font-size: 1rem;
+  color: white;
+  font-weight: 700;
+  border-bottom: 1px solid hsl(240, 78%, 98%);
+  width: 100%;
+  text-align: center;
+  height: 2.5rem;
+}
+body main .card-container .card .card-body .card-text:first-child {
+  border: none;
+  font-size: 1.25rem;
+}
+body main .card-container .card .card-body h5 {
+  font-size: 5rem;
+  color: white;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid hsl(240, 78%, 98%);
+  width: 100%;
+  padding-bottom: 30px;
+}
+body main .card-container .card .card-body h5 span {
+  font-size: 2.5rem;
+  color: white;
+  margin-right: 0.5rem;
+}
+body main .card-container .card .card-body .btn {
+  background: white;
+  width: 100%;
+  color: #696fdd;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 12px 0;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+}
+body main .card-container .card .card-body .btn:hover {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+@media only screen and (min-width: 1440px) {
+  body main .card-container .card:first-child {
+    border-radius: 10px 0 0 10px;
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius: 10px 0 0 10px;
+    -ms-border-radius: 10px 0 0 10px;
+    -o-border-radius: 10px 0 0 10px;
+  }
+  body main .card-container .card:last-child {
+    border-radius: 0 10px 10px 0;
+    -webkit-border-radius: 0 10px 10px 0 10px;
+    -moz-border-radius: 0 10px 10px 0 10px;
+    -ms-border-radius: 0 10px 10px 0 10px;
+    -o-border-radius: 0 10px 10px 0 10px;
+  }
+}
+body main .card-container .card:nth-child(odd) {
+  background: white;
+  color: white;
+  margin: 20px 0;
+}
+body main .card-container .card:nth-child(odd) .card-body .card-text {
+  color: hsl(233, 13%, 49%);
+  border-bottom: 1px solid #b3b5c6;
+}
+body main .card-container .card:nth-child(odd) .card-body .card-text:first-child {
+  border: none;
+}
+body main .card-container .card:nth-child(odd) .card-body h5 {
+  color: hsl(232, 13%, 33%);
+  border-bottom: 1px solid #b3b5c6;
+}
+body main .card-container .card:nth-child(odd) .card-body h5 span {
+  color: hsl(232, 13%, 33%);
+}
+body main .card-container .card:nth-child(odd) .card-body .btn {
+  background: linear-gradient(90deg, #a3a8f0, #696fdd);
+  color: white;
+}
+body main .card-container .card:nth-child(odd) .card-body .btn:hover {
+  background: white;
+  color: #696fdd;
+  border: 1px solid #b3b5c6;
+}
+body footer {
+  margin-top: 5rem;
+}
+body footer .attribution {
+  background-color: transparent;
+  font-size: 0.6rem;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b3b5c6;
+}
+body footer .attribution a {
+  color: #b3b5c6;
+  font-size: 0.6rem;
+  text-decoration: none;
+  margin-left: 0.1rem;
+}
+body footer .attribution .barchu {
+  font-size: 0.6rem;
+  color: white;
+  background-color: blueviolet;
+  padding: 0.1rem 0.25rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
